@@ -12,13 +12,15 @@
     "web": "expo start --web",
     "prepare": "husky install"
   },
-  "lint-staged":{
-    "*.{js.jsx}":[
+  "lint-staged": {
+    "*.{js.jsx}": [
       "eslint --fix",
       "prettier --write"
     ]
   },
   "dependencies": {
+    "@react-navigation/native": "^6.1.9",
+    "@react-navigation/native-stack": "^6.9.16",
     "expo": "~49.0.15",
     "expo-status-bar": "~1.6.0",
     "react": "18.2.0",
@@ -26,9 +28,11 @@
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
+    "babel-plugin-module-resolver": "^5.0.0",
     "eslint": "^8.52.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^9.0.0",
+    "eslint-import-resolver-babel-module": "^5.3.2",
     "eslint-plugin-import": "^2.29.0",
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-prettier": "^5.0.1",

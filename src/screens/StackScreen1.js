@@ -3,10 +3,10 @@ import {View, Text, Button, StyleSheet} from 'react-native';
 const Screen1 = props => {
   return (
     <View style={styles.screen}>
-      <Text>Screen 1</Text>
+      <Text>This is Stack Screen 1</Text>
       <Button
         onPress={() => props.navigation.navigate('Screen2')}
-        title='Go to Screen two >'
+        title='Next >'
       />
     </View>
   );

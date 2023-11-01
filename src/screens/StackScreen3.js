@@ -1,12 +1,12 @@
-import {View, Text, Button, StyleSheet} from 'react-native';
+import { View, Text, Button, StyleSheet } from 'react-native';
 
-const Screen4 = props => {
+const Screen3 = (props) => {
   return (
     <View style={styles.screen}>
-      <Text>Screen 4</Text>
+      <Text>This is Stack Screen 3</Text>
       <Button
         onPress={() => props.navigation.navigate('Screen1')}
-        title='< Back to Initial Screen'
+        title="< First"
       />
     </View>
   );
@@ -17,7 +17,8 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    textAlign: 'center',
   },
 });
 
-export default Screen4;
+export default Screen3;

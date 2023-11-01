@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react-native';
 
-import SimpleButton from './SimpleButton.android';
+import SimpleButton from './SimpleButton';
 
 describe('<SimpleButton/>', () => {
   test('it renders correctly', () => {

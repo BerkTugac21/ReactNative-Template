@@ -14,7 +14,19 @@
     "prepare": "husky install"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "moduleFileExtensions": [
+      "js",
+      "jsx",
+      "json"
+    ],
+    "transform": {
+      "^.+\\.(js|jsx)$": "babel-jest"
+    },
+    "testMatch": [
+      "**/__tests__/**/*.js?(x)",
+      "**/?(*.)+(spec|test).js?(x)"
+    ]
   },
   "lint-staged": {
     "*.{js.jsx}": [
@@ -42,6 +54,7 @@
     "@babel/core": "^7.20.0",
     "@testing-library/jest-native": "^5.4.3",
     "@testing-library/react-native": "^12.3.1",
+    "babel-jest": "^29.7.0",
     "babel-plugin-module-resolver": "^5.0.0",
     "eslint": "^8.52.0",
     "eslint-config-airbnb": "^19.0.4",

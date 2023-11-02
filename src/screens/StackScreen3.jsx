@@ -1,16 +1,7 @@
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable react/prop-types */
+import React from 'react';
 import { View, Text, Button, StyleSheet } from 'react-native';
-
-const Screen3 = (props) => {
-  return (
-    <View style={styles.screen}>
-      <Text>This is Stack Screen 3</Text>
-      <Button
-        onPress={() => props.navigation.navigate('Screen1')}
-        title="< First"
-      />
-    </View>
-  );
-};
 
 const styles = StyleSheet.create({
   screen: {
@@ -20,5 +11,17 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
 });
+
+function Screen3(props) {
+  return (
+    <View style={styles.screen}>
+      <Text>This is Stack Screen 3</Text>
+      <Button
+        onPress={() => props.navigation.navigate('Screen1')}
+        title="< First"
+      />
+    </View>
+  );
+}
 
 export default Screen3;

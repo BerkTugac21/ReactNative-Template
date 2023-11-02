@@ -1,9 +1,18 @@
 import { View, Text, Button, StyleSheet } from 'react-native';
 
 import NotificationBar from 'components/shared/NotificationBar';
-import { useNotification } from '../contexts/NotificationBarContext';
+import React from 'react';
+import { useNotification } from 'contexts/NotificationBarContext';
 
-const TabScreen1 = () => {
+const styles = StyleSheet.create({
+  screen: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+});
+
+function TabScreen1() {
   const {
     visible,
     toggleNotificationBar,
@@ -19,7 +28,7 @@ const TabScreen1 = () => {
         title={visible ? 'Close-Notification' : 'Show-Notification'}
       />
       <NotificationBar
-        message={'Test4 SnackBar Message'}
+        message="My snackbar message text is here!"
         visible={visible}
         toggleNotificationBar={toggleNotificationBar}
         openNotificationBar={openNotificationBar}
@@ -27,14 +36,6 @@ const TabScreen1 = () => {
       />
     </View>
   );
-};
-
-const styles = StyleSheet.create({
-  screen: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-});
+}
 
 export default TabScreen1;

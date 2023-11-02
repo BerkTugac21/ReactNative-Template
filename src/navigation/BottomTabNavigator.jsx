@@ -1,3 +1,4 @@
+import React from 'react';
 import { createMaterialBottomTabNavigator } from 'react-native-paper/react-navigation';
 
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
@@ -7,7 +8,7 @@ import StackNavigator from './StackNavigator';
 
 const Tab = createMaterialBottomTabNavigator();
 
-const BottomTabNavigator = () => {
+function BottomTabNavigator() {
   return (
     <Tab.Navigator screenOptions={{ headerShown: false }}>
       <Tab.Screen
@@ -26,12 +27,16 @@ const BottomTabNavigator = () => {
         options={{
           tabBarLabel: 'Tab2',
           tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="folder-alert" color={color} size={26} />
+            <MaterialCommunityIcons
+              name="folder-alert"
+              color={color}
+              size={26}
+            />
           ),
         }}
       />
     </Tab.Navigator>
   );
-};
+}
 
 export default BottomTabNavigator;

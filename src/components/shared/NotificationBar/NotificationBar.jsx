@@ -1,12 +1,16 @@
+/* eslint-disable react/prop-types */
 import * as React from 'react';
 import { View, StyleSheet } from 'react-native';
 import { Snackbar } from 'react-native-paper';
 
-const NotificationBar = ({
-  message,
-  visible,
-  closeNotificationBar,
-}) => {
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'space-between',
+  },
+});
+
+function NotificationBar({ message, visible, closeNotificationBar }) {
   return (
     <View style={styles.container}>
       <Snackbar
@@ -23,13 +27,6 @@ const NotificationBar = ({
       </Snackbar>
     </View>
   );
-};
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'space-between',
-  },
-});
+}
 
 export default NotificationBar;

@@ -1,6 +1,21 @@
-## Project Folder Structure
+## React Native Template Details
 
-### Directory Descriptions
+### Template Download
+To download template use:
+
+`git clone <replace-here-with-git-template-url>`
+
+### Install dependencies
+To install dependencies use:
+
+`npm install or yarn install`
+
+### Run tests
+To run tests use:
+
+`npm test or yarn test`
+
+### Folder Structure
 
 - **src/**: The main source directory.
   - **api/**: API-related files and configurations.

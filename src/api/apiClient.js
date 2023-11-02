@@ -1,7 +1,6 @@
 import axios from 'axios';
 
 import { API_BASE_URL } from '@env';
-
 // Load environment variables
 const BASE_URL = API_BASE_URL;
 

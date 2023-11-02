@@ -1,7 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable react/prop-types */
+import React from 'react';
+import { View, Text, StyleSheet, Button } from 'react-native';
 
-import { get } from 'api/apiClient';
+// import { get } from 'api/apiClient';
 
 const styles = StyleSheet.create({
   screen: {
@@ -11,8 +13,8 @@ const styles = StyleSheet.create({
   },
 });
 
-function Screen1() {
-  const [data, setData] = useState(null);
+function Screen1(props) {
+  /* const [data, setData] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -25,16 +27,15 @@ function Screen1() {
     };
 
     fetchData();
-  }, []);
+  }, []); */
 
   return (
     <View style={styles.screen}>
-      {/* <Text>This is Stack Screen 1</Text>
+      <Text>This is Stack Screen 1</Text>
       <Button
         onPress={() => props.navigation.navigate('Screen2')}
-        title='Next >'
-      /> */}
-      <Text>{JSON.stringify(data, null, 2)}</Text>
+        title="Next >"
+      />
     </View>
   );
 }

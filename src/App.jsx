@@ -1,11 +1,12 @@
-/* eslint-disable react/jsx-filename-extension */
-import { NavigationContainer } from '@react-navigation/native';
-
 import React, { useMemo } from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { Provider as PaperProvider } from 'react-native-paper';
+
 import DrawerNavigator from 'navigation/DrawerNavigator';
 
 import { Notification } from 'contexts/NotificationBarContext';
 import useNotificationBar from 'hooks/useNotificationBar';
+import customAppTheme from 'styles/Theme';
 
 export default function App() {
   const {
@@ -26,10 +27,12 @@ export default function App() {
   );
 
   return (
-    <Notification.Provider value={notificationContextValue}>
-      <NavigationContainer>
-        <DrawerNavigator />
-      </NavigationContainer>
-    </Notification.Provider>
+    <PaperProvider theme={customAppTheme}>
+      <Notification.Provider value={notificationContextValue}>
+        <NavigationContainer>
+          <DrawerNavigator />
+        </NavigationContainer>
+      </Notification.Provider>
+    </PaperProvider>
   );
 }

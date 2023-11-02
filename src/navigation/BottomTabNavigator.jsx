@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unstable-nested-components */
 import React from 'react';
 import { createMaterialBottomTabNavigator } from 'react-native-paper/react-navigation';
 

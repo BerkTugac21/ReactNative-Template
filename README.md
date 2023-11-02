@@ -21,19 +21,19 @@ To download template use:
 
 `git clone <replace-here-with-git-template-url>`
 
+### Run Project
+To run project use:
+
+`cd YourProjectName`
+then
+`npx expo start`
+
 ### Install dependencies
 To install dependencies use:
 
 `npm install or yarn install`
 
-### Run Project
-To run project use:
-
-`cd YourProjectName`
-then:
-`npx expo start`
-
-### Run tests
+### Run Tests
 To run tests use:
 
 `npm test or yarn test`

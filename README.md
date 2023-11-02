@@ -1,20 +1,5 @@
 ## React Native Template Details
 
-### Template Download
-To download template use:
-
-`git clone <replace-here-with-git-template-url>`
-
-### Install dependencies
-To install dependencies use:
-
-`npm install or yarn install`
-
-### Run tests
-To run tests use:
-
-`npm test or yarn test`
-
 ### Folder Structure
 
 - **src/**: The main source directory.
@@ -30,4 +15,28 @@ To run tests use:
   - **screens/**: React Native screen components.
   - **styles/**: Theme and styling-related files.
   - **utils/**: Utility functions and helper files.
+
+### Template Download
+To download template use:
+
+`git clone <replace-here-with-git-template-url>`
+
+### Install dependencies
+To install dependencies use:
+
+`npm install or yarn install`
+
+### Run Project
+To run project use:
+
+`cd YourProjectName`
+then:
+`npx expo start`
+
+### Run tests
+To run tests use:
+
+`npm test or yarn test`
+
+
 

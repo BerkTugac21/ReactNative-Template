@@ -1,0 +1,15 @@
+{
+  "DummyStackText": "This is stack screen {{name}}!",
+  "DummyTabText": "This is notifications screen {{name}}!",
+  "DummyDrawerText": "This is drawer screen {{name}}!",
+  "NotificationText": "My snackbar message text is here!",
+  "language-options": "Language Options",
+  "HomeTab": "Home",
+  "NotificationsTab": "Notifications",
+  "LanguagesTab": "Languages",
+  "FirstButton": "First",
+  "NextButton": "Next >",
+  "BackButton": "< Back",
+  "ShowButton": "Show",
+  "CloseButton": "Close"
+}

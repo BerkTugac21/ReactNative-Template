@@ -1,4 +1,5 @@
 import { View, Text, Button, StyleSheet } from 'react-native';
+import { useTranslation } from 'react-i18next';
 
 import NotificationBar from 'components/shared/NotificationBar';
 import React from 'react';
@@ -13,6 +14,8 @@ const styles = StyleSheet.create({
 });
 
 function TabScreen1() {
+  const { t } = useTranslation();
+
   const {
     visible,
     toggleNotificationBar,
@@ -22,13 +25,13 @@ function TabScreen1() {
 
   return (
     <View style={styles.screen}>
-      <Text>This is Tab Screen 1</Text>
+      <Text>{t('DummyTabText', { name: 'TabScreen1' })}</Text>
       <Button
         onPress={toggleNotificationBar}
-        title={visible ? 'Close-Notification' : 'Show-Notification'}
+        title={visible ? t('CloseButton') : t('ShowButton')}
       />
       <NotificationBar
-        message="My snackbar message text is here!"
+        message={t('NotificationText')}
         visible={visible}
         toggleNotificationBar={toggleNotificationBar}
         openNotificationBar={openNotificationBar}

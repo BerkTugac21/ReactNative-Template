@@ -1,5 +1,8 @@
 ## React Native Template Details
 
+### External Component Library
+[React-Native-Paper](https://reactnativepaper.com/)
+
 ### Folder Structure
 
 - **src/**: The main source directory.
@@ -9,9 +12,14 @@
     - **android/**: Android-specific components (if any).
     - **ios/**: iOS-specific components (if any).
     - **shared/**: Components used across both Android and iOS.
-  - **contexts/**: React Context API related files.
+  - **contexts/**: React Context API related files.  
   - **hooks/**: Custom React hooks.
+  - **localization/**: Language-related files and configurations.
+    - **TR/**: Turkish-specific language texts.
+    - **EN/**: English-specific language texts.
   - **navigation/**: Navigation configuration and setup.
+  - **providers/**: React Context API providers.
+  - **providers/**: React reducer files.
   - **screens/**: React Native screen components.
   - **styles/**: Theme and styling-related files.
   - **utils/**: Utility functions and helper files.
@@ -24,11 +32,9 @@ To download template use:
 ### Run Project
 To run project use:
 
-`cd YourProjectName`
-then
-`npx expo start`
+`cd YourProjectName` then `npx expo start`
 
-### Install dependencies
+### Install Dependencies
 To install dependencies use:
 
 `npm install or yarn install`
@@ -37,11 +43,3 @@ To install dependencies use:
 To run tests use:
 
 `npm test or yarn test`
-
-### Components Library
-[Library](https://reactnativepaper.com/)
-
-
-
-
-

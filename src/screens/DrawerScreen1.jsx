@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import { useTranslation } from 'react-i18next';
 
 const styles = StyleSheet.create({
   screen: {
@@ -11,9 +12,11 @@ const styles = StyleSheet.create({
 });
 
 function DrawerScreen1() {
+  const { t } = useTranslation();
+
   return (
     <View style={styles.screen}>
-      <Text>This is Drawer Screen 1</Text>
+      <Text>{t('DummyDrawerText', { name: 'DrawerScreen1' })}</Text>
     </View>
   );
 }

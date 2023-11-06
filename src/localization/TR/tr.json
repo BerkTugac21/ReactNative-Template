@@ -1,0 +1,15 @@
+{
+  "DummyStackText": "Stack ekranı {{name}}!",
+  "DummyTabText": "Uyarılar ekranı {{name}}!",
+  "DummyDrawerText": "Drawer ekranı {{name}}!",
+  "NotificationText": "Snackbar mesajı görüntüleniyor!",
+  "language-options": "Dil Seçenekleri",
+  "HomeTab": "Ana Sayfa",
+  "NotificationsTab": "Uyarılar",
+  "LanguagesTab": "Dil",
+  "FirstButton": "İlk",
+  "NextButton": "Ileri >",
+  "BackButton": "< Geri",
+  "ShowButton": "Göster",
+  "CloseButton": "Kapat"
+}

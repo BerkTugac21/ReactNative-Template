@@ -1,6 +1,7 @@
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable react/prop-types */
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { View, Text, StyleSheet, Button } from 'react-native';
 
 // import { get } from 'api/apiClient';
@@ -29,12 +30,14 @@ function Screen1(props) {
     fetchData();
   }, []); */
 
+  const { t } = useTranslation();
+
   return (
     <View style={styles.screen}>
-      <Text>This is Stack Screen 1</Text>
+      <Text>{t('DummyStackText', { name: 'Screen1' })}</Text>
       <Button
         onPress={() => props.navigation.navigate('Screen2')}
-        title="Next >"
+        title={t('NextButton')}
       />
     </View>
   );

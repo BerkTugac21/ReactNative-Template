@@ -1,17 +1,9 @@
-import { View, Text, Button, StyleSheet } from 'react-native';
+import { View, Text, Button } from 'react-native';
 import { useTranslation } from 'react-i18next';
 
 import NotificationBar from 'components/shared/NotificationBar';
 import React from 'react';
 import { useNotification } from 'contexts/NotificationBarContext';
-
-const styles = StyleSheet.create({
-  screen: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-});
 
 function TabScreen1() {
   const { t } = useTranslation();
@@ -24,7 +16,7 @@ function TabScreen1() {
   } = useNotification();
 
   return (
-    <View style={styles.screen}>
+    <View className="flex-1 items-center justify-center">
       <Text>{t('DummyTabText', { name: 'TabScreen1' })}</Text>
       <Button
         onPress={toggleNotificationBar}

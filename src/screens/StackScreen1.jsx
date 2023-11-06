@@ -2,17 +2,9 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { View, Text, StyleSheet, Button } from 'react-native';
+import { View, Text, Button } from 'react-native';
 
 // import { get } from 'api/apiClient';
-
-const styles = StyleSheet.create({
-  screen: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-});
 
 function Screen1(props) {
   /* const [data, setData] = useState(null);
@@ -33,7 +25,7 @@ function Screen1(props) {
   const { t } = useTranslation();
 
   return (
-    <View style={styles.screen}>
+    <View className="flex-1 items-center justify-center">
       <Text>{t('DummyStackText', { name: 'Screen1' })}</Text>
       <Button
         onPress={() => props.navigation.navigate('Screen2')}

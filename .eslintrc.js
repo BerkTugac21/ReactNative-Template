@@ -3,6 +3,10 @@ module.exports = {
     es2021: true,
     jest: true,
   },
+  globals: {
+    // Other globals...
+    ReactIntl: 'readonly', // Add this line for 'react-intl'
+  },
   extends: [
     'airbnb',
     'plugin:import/errors',
@@ -23,6 +27,9 @@ module.exports = {
           ['styles', './src/styles'],
           ['utils', './src/utils'],
           ['api', './src/api'],
+          ['localization', './src/localization'],
+          ['providers', './src/providers'],
+          ['reducers', './src/reducers'],
         ],
         extensions: ['.js', '.jsx', '.json'],
       },

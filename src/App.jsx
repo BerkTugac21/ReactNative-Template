@@ -1,12 +1,14 @@
 import React, { useMemo } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { Provider as PaperProvider } from 'react-native-paper';
-
-import DrawerNavigator from 'navigation/DrawerNavigator';
+import { PaperProvider } from 'react-native-paper';
 
 import { Notification } from 'contexts/NotificationBarContext';
 import useNotificationBar from 'hooks/useNotificationBar';
+import DrawerNavigator from 'navigation/DrawerNavigator';
+
 import customAppTheme from 'styles/Theme';
+
+import 'localization/i18n';
 
 export default function App() {
   const {

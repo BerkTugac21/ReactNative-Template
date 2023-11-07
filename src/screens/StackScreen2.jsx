@@ -10,14 +10,16 @@ function Screen2(props) {
   return (
     <View className="flex-1 items-center justify-center">
       <Text>{t('DummyStackText', { name: 'Screen2' })}</Text>
-      <Button
-        onPress={() => props.navigation.navigate('Screen3')}
-        title={t('NextButton')}
-      />
-      <Button
-        onPress={() => props.navigation.goBack()}
-        title={t('BackButton')}
-      />
+      <View className="flex justify-between flex-row ">
+        <Button
+          onPress={() => props.navigation.goBack()}
+          title={t('BackButton')}
+        />
+        <Button
+          onPress={() => props.navigation.navigate('Screen3')}
+          title={t('NextButton')}
+        />
+      </View>
     </View>
   );
 }

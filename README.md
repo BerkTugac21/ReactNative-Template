@@ -3,6 +3,9 @@
 ### External Component Library
 [React-Native-Paper](https://reactnativepaper.com/)
 
+### External CSS-in-JS Library
+[NativeWind](https://www.nativewind.dev/)
+
 ### Folder Structure
 
 - **src/**: The main source directory.

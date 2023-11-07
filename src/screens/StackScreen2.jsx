@@ -10,7 +10,7 @@ function Screen2(props) {
   return (
     <View className="flex-1 items-center justify-center">
       <Text>{t('DummyStackText', { name: 'Screen2' })}</Text>
-      <View className="flex justify-between flex-row ">
+      <View className="flex justify-between flex-row">
         <Button
           onPress={() => props.navigation.goBack()}
           title={t('BackButton')}

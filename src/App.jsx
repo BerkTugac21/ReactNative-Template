@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
+import { registerRootComponent } from 'expo';
 
 import DrawerNavigator from 'navigation/DrawerNavigator';
 import NotificationProvider from 'providers/NotificationBarProvider';
@@ -18,3 +19,5 @@ export default function App() {
     </ThemeProvider>
   );
 }
+
+registerRootComponent(App);

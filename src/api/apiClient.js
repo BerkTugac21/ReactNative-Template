@@ -1,35 +1,55 @@
 import axios from 'axios';
 
-import { API_BASE_URL } from '@env';
 // Load environment variables
-const BASE_URL = API_BASE_URL;
+import { API_BASE_URL } from '@env';
 
 // Create an Axios instance with default configuration
 const apiClient = axios.create({
-  baseURL: BASE_URL,
+  baseURL: API_BASE_URL,
   headers: {
-    'Content-Type': 'application/json',
+    'Content-Type': 'application/x-www-form-urlencoded',
   },
 });
 
-// Define a function for making a GET request
-const get = (url, params = {}) => {
-  return apiClient.get(url, { params });
+const get = async (url, params = {}) => {
+  try {
+    const response = await apiClient.get(url, { params });
+    return response.data;
+  } catch (error) {
+    throw new Error(error);
+  }
 };
 
-// Define a function for making a POST request
-const post = (url, data = {}) => {
-  return apiClient.post(url, data);
+const post = async (url, data = {}, config = {}) => {
+  const headers = {
+    'Content-Type': 'application/x-www-form-urlencoded',
+    ...config.headers,
+  };
+
+  try {
+    const response = await apiClient.post(url, data, { headers });
+    return response.data;
+  } catch (error) {
+    throw new Error(error);
+  }
 };
 
-// Define a function for making a PUT request
-const put = (url, data = {}) => {
-  return apiClient.put(url, data);
+const put = async (url, data = {}) => {
+  try {
+    const response = await apiClient.put(url, data);
+    return response.data;
+  } catch (error) {
+    throw new Error(error);
+  }
 };
 
-// Define a function for making a DELETE request
-const remove = (url) => {
-  return apiClient.delete(url);
+const remove = async (url) => {
+  try {
+    const response = await apiClient.delete(url);
+    return response.data;
+  } catch (error) {
+    throw new Error(error);
+  }
 };
 
 export { get, post, put, remove };

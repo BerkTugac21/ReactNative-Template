@@ -16,12 +16,14 @@ import ThemeProvider from 'providers/ThemeProvider';
 import store from '../store';
 
 import 'localization/i18n';
+import useFetchUpdate from './hooks/useFetchUpdate';
 
 export default function AppLayout(props) {
   const { hideSplashScreen } = props;
 
   useEffect(() => {
     setTimeout(hideSplashScreen, 5000);
+    useFetchUpdate();
   }, []);
 
   return (
